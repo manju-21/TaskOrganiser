@@ -1,7 +1,33 @@
 ﻿
+@model IEnumerable<TaskOrganiserWeb.Models.Task>
 @{
     ViewData["Title"] = "Index";
 }
 
 <h1>Index Task</h1>
+<table class="table table-bordered table-striped" style="100%"></table>
+    <thead>
+        <tr>
+            <th>
+                Task Name
+            </th>
+            <th>
+                TaskID
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach(var obj in model)
+    {
+        <tr>
+            <td width="50%">
+                @obj.Name
+             </td>
+             <td width="30%">
+                 @obj.Description
+             </td>
+
+        </tr>
+    }
+</tbody>
 

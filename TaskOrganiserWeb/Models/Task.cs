@@ -10,14 +10,13 @@ namespace TaskOrganiserWeb.Models
     {
    
         [Key]
-        public int Id { get; set; }
-        [Required]
-        [MaxLength(30)]
-        [DisplayName("Category Name")]
+
+        public int TaskID { get; set; }
+
         public string TaskName { get; set; }
         public string Description { get; set; }
-        public required string Status { get; set; }
-        public DateTime CreatedDateTime { get; set; } = DateTime.Now;
+        public  string Status { get; set; }
+        public DateTime CreatedDateTime { get; set; }
 
     }
 }

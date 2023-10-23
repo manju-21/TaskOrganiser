@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TaskOrganiserWeb.Models;
+using Task = TaskOrganiserWeb.Models.Task;
 
 namespace TaskOrganiserWeb.Data
 {

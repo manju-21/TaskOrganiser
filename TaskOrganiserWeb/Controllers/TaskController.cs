@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TaskOrganiserWeb.Data;
+using Task = TaskOrganiserWeb.Models.Task;
 
 namespace TaskOrganiserWeb.Controllers
 {
@@ -13,8 +14,8 @@ namespace TaskOrganiserWeb.Controllers
         }
         public IActionResult Index()
         {
-            var objTaskList=_db.Tasks.ToList();
-            return View();
+            IEnumerable<Task>objTaskList=_db.Tasks.ToList();
+            return View(objTaskList);
         }
     }
 }
