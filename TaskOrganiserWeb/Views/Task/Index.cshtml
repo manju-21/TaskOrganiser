@@ -12,19 +12,19 @@
                 Task Name
             </th>
             <th>
-                TaskID
+                Description
             </th>
         </tr>
     </thead>
     <tbody>
-    @foreach(var obj in model)
+    @foreach(var obj in Model)
     {
         <tr>
             <td width="50%">
-                @obj.Name
+                @obj.TaskName
              </td>
              <td width="30%">
-                 @obj.Description
+                @obj.Description
              </td>
 
         </tr>
